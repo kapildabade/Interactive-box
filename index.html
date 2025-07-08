@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bundle & Save</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Bundle & Save</h2>
+
+    <!-- Box 1 -->
+    <div class="box active" data-price="195" data-pairs="1">
+      <input type="radio" name="bundle" checked />
+      <div class="box-header">
+        <div class="left">
+          <p>1 Pair</p>
+          <p class="price">DKK 195.00</p>
+        </div>
+        <div class="right">
+          <p class="off">50% OFF</p>
+        </div>
+      </div>
+      <div class="box-body">
+        <div class="option">
+          <label>#1</label>
+          <select class="size">
+            <option>S</option><option>M</option><option>L</option>
+          </select>
+          <select class="color">
+            <option value="">Colour</option>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="box" data-price="345" data-pairs="2">
+      <input type="radio" name="bundle" />
+      <div class="box-header">
+        <div class="left">
+          <p>2 Pair <span class="popular">Most Popular</span></p>
+          <p class="price">DKK 345.00 <span class="strike">DKK 195.00</span></p>
+        </div>
+        <div class="right">
+          <p class="off">40% OFF</p>
+        </div>
+      </div>
+      <div class="box-body">
+        <div class="option">
+          <label>#1</label>
+          <select class="size">
+            <option>S</option><option>M</option><option>L</option>
+          </select>
+          <select class="color">
+            <option value="">Colour</option>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+          </select>
+        </div>
+        <div class="option">
+          <label>#2</label>
+          <select class="size">
+            <option>S</option><option>M</option><option>L</option>
+          </select>
+          <select class="color">
+            <option value="">Colour</option>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="box" data-price="528" data-pairs="3">
+      <input type="radio" name="bundle" />
+      <div class="box-header">
+        <div class="left">
+          <p>3 Pair</p>
+          <p class="price">DKK 528.00</p>
+        </div>
+        <div class="right">
+          <p class="off">60% OFF</p>
+        </div>
+      </div>
+      <div class="box-body">
+        <div class="option">
+          <label>#1</label>
+          <select class="size">
+            <option>S</option><option>M</option><option>L</option>
+          </select>
+          <select class="color">
+            <option value="">Colour</option>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+          </select>
+        </div>
+        <div class="option">
+          <label>#2</label>
+          <select class="size">
+            <option>S</option><option>M</option><option>L</option>
+          </select>
+          <select class="color">
+            <option value="">Colour</option>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+          </select>
+        </div>
+        <div class="option">
+          <label>#3</label>
+          <select class="size">
+            <option>S</option><option>M</option><option>L</option>
+          </select>
+          <select class="color">
+            <option value="">Colour</option>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Free 2 Day Shipping</p>
+      <p>Total: <strong id="total-price">DKK 195.00</strong></p>
+    </div>
+
+    <button class="add-to-cart">+ Add to Cart</button>
+  </div>
+
+  <script src="script.js"></script>
+  
+
+</body>
+</html>

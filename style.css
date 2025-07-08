@@ -1,0 +1,184 @@
+/* Base Reset and Layout */
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 420px;
+  width: 100%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+/* Heading with decorative lines */
+h2 {
+  text-align: center;
+  color: #00b894;
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+h2::before,
+h2::after {
+  content: "";
+  height: 1px;
+  width: 30%;
+  background: #ccc;
+  position: absolute;
+  top: 50%;
+}
+
+h2::before {
+  left: 0;
+}
+
+h2::after {
+  right: 0;
+}
+
+/* Box Styling */
+.box {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 12px;
+  background-color: white;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  max-height: 180px;
+  position: relative;
+}
+
+.box:hover {
+  border-color: #00b894;
+  background-color: #f1fff7;
+  max-height: 800px;
+}
+
+/* Header */
+.box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left p,
+.right p {
+  margin: 3px 0;
+}
+
+.popular {
+  background: #00b894;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin-left: 6px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 12px;
+}
+
+.off {
+  color: green;
+  font-size: 14px;
+}
+
+/* Box Body with Slide Effect */
+.box-body {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.4s ease;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.box:hover .box-body {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+/* Size and Color Rows */
+.option {
+  display: flex;
+  gap: 10px;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 6px;
+  transition: background 0.3s;
+  align-items: center;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Add to Cart Button */
+button.add-to-cart {
+  width: 100%;
+  padding: 12px;
+  background: #00b894;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Powered Footer */
+.powered {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #888;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .box {
+    padding: 10px 8px;
+  }
+
+  .option {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+}
